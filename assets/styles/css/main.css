@@ -1,0 +1,612 @@
+@font-face {
+  font-family: 'Normalidad-thin';
+  src: url(../../fonts/font/NormalidadCompact-Thin.ttf);
+}
+
+@font-face {
+  font-family: 'Normalidad-thin_1';
+  src: url(../../fonts/font/NormalidadCompact-Thin_1.ttf);
+}
+
+@font-face {
+  font-family: 'Normalidad-regular';
+  src: url(../../fonts/font/NormalidadCompact-Regular.ttf);
+}
+
+@font-face {
+  font-family: 'Normalidad-medium';
+  src: url(../../fonts/font/NormalidadCompact-Medium.ttf);
+}
+
+@font-face {
+  font-family: 'Normalidad-light';
+  src: url(../../fonts/font/NormalidadCompact-Light.ttf);
+}
+
+@font-face {
+  font-family: 'Normalidad-bold';
+  src: url(../../fonts/font/NormalidadCompact-Bold.ttf);
+}
+
+@font-face {
+  font-family: 'Normalidad-black';
+  src: url(../../fonts/font/NormalidadCompact-Black.ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.form_page .form {
+  padding: 135px 0;
+}
+
+.form_page .form .to_the_project img {
+  margin-left: 18px;
+}
+
+.form_page .form .to_the_project a {
+  font-size: 20px;
+  font-family: "Normalidad-thin_1";
+  color: #8B8B8B;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+  -webkit-justify-content: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  text-decoration: none;
+  line-height: 30px;
+  -webkit-transition: .3s;
+  -o-transition: .3s;
+  transition: .3s;
+}
+
+.form_page .form .to_the_project a:hover {
+  color: #1919EF;
+}
+
+.form_page .form .to_the_project a img {
+  margin-right: 18px;
+}
+
+.form_page .form .title_text h1 {
+  font-size: 50px;
+  font-family: "Normalidad-thin_1";
+  color: #1919EF;
+  line-height: 50px;
+  margin-top: 27px;
+}
+
+.form_page .form form .form_title_text {
+  margin-top: 80px;
+}
+
+.form_page .form form .form_title_text h3 {
+  font-size: 20px;
+  font-family: "Normalidad-regular";
+  color: #000000;
+  line-height: 30px;
+  margin: 0;
+}
+
+.form_page .form form .input_list {
+  position: relative;
+  margin-top: 50px;
+}
+
+.form_page .form form .input_list .form_input {
+  width: 95%;
+  height: 40px;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid #CACACA;
+  padding-bottom: 10px;
+  font-size: 20px;
+  font-family: "Normalidad-regular";
+  color: #000000;
+  -webkit-transition: .3s;
+  -o-transition: .3s;
+  transition: .3s;
+}
+
+.form_page .form form .input_list .form_input:focus {
+  border-bottom: 1px solid #1919EF;
+}
+
+.form_page .form form .input_list #firstName,
+.form_page .form form .input_list #lastName,
+.form_page .form form .input_list #middleName,
+.form_page .form form .input_list #university,
+.form_page .form form .input_list #direction {
+  text-transform: capitalize;
+}
+
+.form_page .form form .input_list .form_input:focus,
+.form_page .form form .input_list .form_input:valid {
+  border-bottom: 1px solid #1919EF;
+}
+
+.form_page .form form .input_list .form_input:focus ~ .form_label,
+.form_page .form form .input_list .form_input:valid ~ .form_label {
+  -webkit-transform: translateY(-20px);
+      -ms-transform: translateY(-20px);
+          transform: translateY(-20px);
+  font-size: 14px;
+  color: #1919EF;
+}
+
+.form_page .form form .input_list .form_label {
+  position: absolute;
+  left: 0;
+  top: 0;
+  cursor: pointer;
+  font-size: 20px;
+  font-family: "Normalidad-light";
+  color: #9B9B9B;
+  -webkit-transition: .3s;
+  -o-transition: .3s;
+  transition: .3s;
+  pointer-events: none;
+}
+
+.form_page .form form .input_list .form_label span {
+  color: #1919EF;
+}
+
+.form_page .form form .radio_list,
+.form_page .form form .check_agree_myFile {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+  -webkit-align-items: start;
+      -ms-flex-align: start;
+          align-items: start;
+  -webkit-box-pack: start;
+  -webkit-justify-content: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.form_page .form form .radio_list .label_radio,
+.form_page .form form .check_agree_myFile .label_radio {
+  margin-top: 32px;
+  font-size: 20px;
+  font-family: "Normalidad-regular";
+  color: #000000;
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  cursor: pointer;
+}
+
+.form_page .form form .radio_list .label_radio input[type='radio'],
+.form_page .form form .check_agree_myFile .label_radio input[type='radio'] {
+  width: 21px;
+  height: 21px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -moz-appearance: none;
+       appearance: none;
+  -webkit-appearance: none;
+  border: 1px solid #CACACA;
+  vertical-align: middle;
+  -webkit-border-radius: 5px;
+          border-radius: 5px;
+  position: relative;
+  -webkit-transition: all .5s ease-out;
+  -o-transition: all .5s ease-out;
+  transition: all .5s ease-out;
+  cursor: pointer;
+  margin-right: 17px;
+}
+
+.form_page .form form .radio_list .label_radio input[type='radio']:focus,
+.form_page .form form .check_agree_myFile .label_radio input[type='radio']:focus {
+  outline: none;
+}
+
+.form_page .form form .radio_list .label_radio input[type='radio']::after,
+.form_page .form form .check_agree_myFile .label_radio input[type='radio']::after {
+  font-family: 'Font Awesome 5 Free';
+  content: '\f00c';
+  font-weight: 900;
+  font-size: 12px;
+  color: #ffffff;
+  display: none;
+}
+
+.form_page .form form .radio_list .label_radio input[type='radio']:checked,
+.form_page .form form .check_agree_myFile .label_radio input[type='radio']:checked {
+  background-color: #1919EF;
+  border: none;
+}
+
+.form_page .form form .radio_list .label_radio input[type='radio']:checked::after,
+.form_page .form form .check_agree_myFile .label_radio input[type='radio']:checked::after {
+  display: block;
+}
+
+.form_page .form form .radio_list .check_agree,
+.form_page .form form .check_agree_myFile .check_agree {
+  margin-top: 61px;
+  font-size: 16px;
+  font-family: "Normalidad-regular";
+  color: #9B9B9B;
+  line-height: 15px;
+}
+
+.form_page .form form .btn_submit {
+  text-align: center;
+  margin-top: 117px;
+}
+
+.form_page .form form .btn_submit button {
+  width: 170px;
+  height: 40px;
+  -webkit-border-radius: 40px;
+          border-radius: 40px;
+  border: 1px solid #1919EF;
+  font-size: 16px;
+  font-family: "Normalidad-regular";
+  color: #1919EF;
+  background-color: #ffffff;
+  outline: none;
+  -webkit-transition: .5s;
+  -o-transition: .5s;
+  transition: .5s;
+}
+
+.form_page .form form .btn_submit button:hover {
+  background-color: #1919EF;
+  color: #ffffff;
+}
+
+.form_page .form form .add_file .add_file_item {
+  width: 100%;
+  height: 184px;
+  border: 1px dashed #7D7D7D;
+  -webkit-border-radius: 5px;
+          border-radius: 5px;
+  margin-top: 38px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.form_page .form form .add_file .add_file_item label {
+  font-size: 20px;
+  font-family: "Normalidad-regular";
+  color: #1919EF;
+  margin-right: 5px;
+}
+
+.form_page .form form .add_file .add_file_item input {
+  display: none;
+}
+
+.form_page .form form .add_file .add_file_item span {
+  font-size: 20px;
+  font-family: "Normalidad-light";
+  color: #9B9B9B;
+}
+
+.form_page .form form .add_file .add_file_item p {
+  font-size: 16px;
+  font-family: "Normalidad-light";
+  color: #9B9B9B;
+  margin-top: -5px;
+}
+
+.form_page .form form .add_file .check_agree_myFile .check_agree_MyFile {
+  font-size: 16px;
+  font-family: "Normalidad-regular";
+  color: #9B9B9B;
+  line-height: 15px;
+}
+
+.form_page .form form .mobile_schedule label {
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+  -webkit-justify-content: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  font-size: 20px;
+  font-family: "Normalidad-light";
+  color: #000000;
+  line-height: 25px;
+  margin-top: 32px;
+}
+
+.form_page .form form .mobile_schedule label input {
+  margin-right: 17px;
+}
+
+.form_page .form form .mobile_schedule .other_radio {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 32px;
+}
+
+.form_page .form form .mobile_schedule .other_radio div {
+  width: 100%;
+  height: 20px;
+  position: relative;
+}
+
+.form_page .form form .mobile_schedule .other_radio input[type="radio"] {
+  margin-right: 17px;
+}
+
+.form_page .form form .mobile_schedule .other_radio .r_input {
+  width: 100%;
+  height: 100%;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid #CACACA;
+  padding-bottom: 10px;
+  font-size: 20px;
+  font-family: "Normalidad-light";
+  color: #000000;
+  -webkit-transition: .3s;
+  -o-transition: .3s;
+  transition: .3s;
+}
+
+.form_page .form form .mobile_schedule .other_radio .r_input:focus {
+  border-bottom: 1px solid #1919EF;
+}
+
+.form_page .form form .mobile_schedule .other_radio .r_input:focus,
+.form_page .form form .mobile_schedule .other_radio .r_input:valid {
+  border-bottom: 1px solid #1919EF;
+}
+
+.form_page .form form .mobile_schedule .other_radio .r_input:focus ~ .r_label,
+.form_page .form form .mobile_schedule .other_radio .r_input:valid ~ .r_label {
+  -webkit-transform: translateY(-20px);
+      -ms-transform: translateY(-20px);
+          transform: translateY(-20px);
+  font-size: 14px;
+  color: #1919EF;
+}
+
+.form_page .form form .mobile_schedule .other_radio .r_label {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  cursor: pointer;
+  font-size: 20px;
+  font-family: "Normalidad-light";
+  color: #9B9B9B;
+  -webkit-transition: .3s;
+  -o-transition: .3s;
+  transition: .3s;
+  pointer-events: none;
+}
+
+.form_page .form form .work_item {
+  position: relative;
+  width: 100%;
+  height: 100px;
+  margin-top: 60px;
+}
+
+.form_page .form form .work_item .work_list {
+  width: 100%;
+  height: 100px;
+  resize: none;
+  border: none;
+  border-bottom: 1px solid #CACACA;
+  font-size: 20px;
+  font-family: "Normalidad-light";
+  color: #000000;
+  -webkit-transition: .3s;
+  -o-transition: .3s;
+  transition: .3s;
+  outline: none;
+}
+
+.form_page .form form .work_item .work_list:focus {
+  border-bottom: 1px solid #1919EF;
+}
+
+.form_page .form form .work_item .work_list:focus ~ label,
+.form_page .form form .work_item .work_list:valid ~ label {
+  -webkit-transform: translateY(-30px);
+      -ms-transform: translateY(-30px);
+          transform: translateY(-30px);
+  font-size: 14px;
+  color: #1919EF;
+}
+
+.form_page .form form .work_item label {
+  position: absolute;
+  left: 0;
+  top: -30px;
+  cursor: pointer;
+  font-size: 20px;
+  font-family: "Normalidad-light";
+  color: #9B9B9B;
+  -webkit-transition: .3s;
+  -o-transition: .3s;
+  transition: .3s;
+  pointer-events: none;
+}
+
+.form_page .form form .work_schedule {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.form_page .form form .work_schedule label {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  cursor: pointer;
+}
+
+@font-face {
+  font-family: 'Normalidad-thin';
+  src: url(../../fonts/font/NormalidadCompact-Thin.ttf);
+}
+
+@font-face {
+  font-family: 'Normalidad-thin_1';
+  src: url(../../fonts/font/NormalidadCompact-Thin_1.ttf);
+}
+
+@font-face {
+  font-family: 'Normalidad-regular';
+  src: url(../../fonts/font/NormalidadCompact-Regular.ttf);
+}
+
+@font-face {
+  font-family: 'Normalidad-medium';
+  src: url(../../fonts/font/NormalidadCompact-Medium.ttf);
+}
+
+@font-face {
+  font-family: 'Normalidad-light';
+  src: url(../../fonts/font/NormalidadCompact-Light.ttf);
+}
+
+@font-face {
+  font-family: 'Normalidad-bold';
+  src: url(../../fonts/font/NormalidadCompact-Bold.ttf);
+}
+
+@font-face {
+  font-family: 'Normalidad-black';
+  src: url(../../fonts/font/NormalidadCompact-Black.ttf);
+}
+
+@media screen and (min-width: 993px) {
+  .form_page form .add_file {
+    display: none;
+  }
+  .form_page form .mobile_schedule {
+    display: none !important;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .form_page form .btn_submit {
+    text-align: start !important;
+    margin-top: 82px !important;
+  }
+  .form_page form .add_file {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .form_page form .mobile_schedule {
+    display: none !important;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .form_page .form {
+    padding: 99px 0 !important;
+  }
+  .form_page .title_text h1 {
+    font-size: 28px !important;
+    line-height: 35px !important;
+  }
+  .form_page form .form_title_text {
+    margin-top: 47px !important;
+  }
+  .form_page form .lectures {
+    display: none !important;
+  }
+  .form_page form .mobile_schedule {
+    display: -webkit-box !important;
+    display: -webkit-flex !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+  }
+}

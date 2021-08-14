@@ -1,0 +1,69 @@
+@import 'fonts';
+@import 'colors';
+@import 'mixins';
+
+// Desctop screen
+@media screen and (min-width: 993px) {
+    .form_page {
+        form {
+            .add_file {
+                display: none;
+            }
+
+            .mobile_schedule {
+                display: none !important;
+            }
+        }
+    }
+}
+
+// Tablet screen
+@media screen and (max-width: 992px) {
+    .form_page {
+        form {
+            .btn_submit {
+                text-align: start !important;
+                margin-top: 82px !important;
+            }
+
+            .add_file {
+                display: flex;
+            }
+
+            .mobile_schedule {
+                display: none !important;
+            }
+        }
+    }
+}
+
+// Mobile screen
+@media screen and (max-width: 576px) {
+    .form_page {
+        .form {
+            padding: 99px 0 !important;
+        }
+        .title_text {
+            h1 {
+                font-size: 28px !important;
+                line-height: 35px !important; 
+            }
+        }
+        form { 
+            .form_title_text {
+            margin-top: 47px !important;
+            // h3 {
+            //     font-family: 'Normalidad-light' !important;
+            // }
+        }
+
+            .lectures {
+                display: none !important;
+            }
+
+            .mobile_schedule {
+                display: flex !important;
+            }
+        }
+    }
+}

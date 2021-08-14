@@ -1,0 +1,24 @@
+@mixin flex($items, $content) {
+    display: flex;
+    align-items: $items;
+    justify-content: $content;
+}
+
+@mixin flex-column($items, $content) {
+    display: flex;
+    align-items: $items;
+    justify-content: $content;
+    flex-direction: column;
+}
+
+@mixin text($size, $font, $color) {
+    font-size: $size;
+    font-family: $font;
+    color: $color;
+}
+
+@mixin section($height) {
+    width: 1440px;
+    height: $height;
+    margin: 0 auto;
+}

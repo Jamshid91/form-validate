@@ -1,0 +1,313 @@
+@import 'fonts';
+@import 'colors';
+@import 'mixins';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.form_page {
+    .form {
+        padding: 135px 0;
+        .to_the_project {
+            img {
+                margin-left: 18px;
+            }
+            a {
+                @include text(20px, 'Normalidad-thin_1', $color-gray-black);     
+                @include flex(center, start);
+                text-decoration: none;
+                line-height: 30px;
+                transition: .3s;
+                &:hover {
+                    color: $color-blue;
+                }
+
+                img {
+                    margin-right: 18px;
+                }
+            }
+        }
+        .title_text {
+            h1 {
+                @include text(50px, 'Normalidad-thin_1', $color-blue); 
+                line-height: 50px; 
+                margin-top: 27px; 
+            }
+        }
+
+        form {
+            .form_title_text {
+                margin-top: 80px;
+                h3 {
+                    @include text(20px, 'Normalidad-regular', $color-black);  
+                    line-height: 30px;
+                    margin: 0;
+                }
+            }
+
+            .input_list {
+                position: relative;
+                margin-top: 50px;
+                .form_input {
+                    width: 95%;
+                    height: 40px;
+                    outline: none;
+                    border: none;
+                    border-bottom: 1px solid $color-gray-light;
+                    padding-bottom: 10px;
+                    @include text(20px, 'Normalidad-regular', $color-black);
+                    transition: .3s;  
+
+                    &:focus {
+                        border-bottom: 1px solid $color-blue;
+                    }
+                }
+                #firstName,
+                #lastName,
+                #middleName,
+                #university,
+                #direction {
+                    text-transform: capitalize;
+                }
+                .form_input:focus,
+                .form_input:valid {
+                    border-bottom: 1px solid $color-blue;
+                }
+                .form_input:focus ~ .form_label,
+                .form_input:valid ~ .form_label {
+                    transform: translateY(-20px);
+                    font-size: 14px;
+                    color: $color-blue;
+                }
+
+                .form_label {
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                    cursor: pointer;
+                    @include text(20px, 'Normalidad-light', $color-gray);
+                    transition: .3s; 
+                    pointer-events: none;
+                    
+                    span {
+                        color: $color-blue;
+                    }
+                }   
+            }
+            .radio_list,
+            .check_agree_myFile {
+                @include flex-column(start, start);
+
+                .label_radio {
+                    margin-top: 32px;
+                    @include text(20px, 'Normalidad-regular', $color-black);
+                    position: relative;
+                    @include flex(center, center);
+                    cursor: pointer;
+
+                    input[type = 'radio'] {
+                        width: 21px;
+                        height: 21px;
+                        @include flex(center, center);
+                        appearance: none;
+                        -webkit-appearance: none;
+                        border: 1px solid $color-gray-light;
+                        vertical-align: middle;
+                        border-radius: 5px;
+                        position: relative;
+                        transition: all .5s ease-out;
+                        cursor: pointer;
+                        margin-right: 17px;
+                      }
+                      input[type = 'radio']:focus {
+                        outline: none;
+                      }
+                      input[type = 'radio']::after {
+                        font-family: 'Font Awesome 5 Free';
+                        content: '\f00c';
+                        font-weight: 900;
+                        font-size: 12px;
+                        color: $color-white;
+                        display: none;
+                      }
+                      input[type = 'radio']:checked {
+                        background-color: $color-blue;
+                        border: none;
+                      }
+                      input[type = 'radio']:checked::after {
+                        display: block;
+                      }
+                }
+                .check_agree {
+                    margin-top: 61px;
+                    @include text(16px, 'Normalidad-regular', $color-gray);
+                    line-height: 15px;
+                }
+            }
+
+            .btn_submit {
+                text-align: center;
+                margin-top: 117px;
+                button {
+                    width: 170px;
+                    height: 40px;
+                    border-radius: 40px;
+                    border: 1px solid $color-blue;
+                    @include text(16px, 'Normalidad-regular', $color-blue);
+                    background-color: $color-white;
+                    outline: none;
+                    transition: .5s;
+
+                    &:hover {
+                        background-color: $color-blue;  
+                        color: $color-white;
+                    }
+                }
+            }
+
+            .add_file {
+                .add_file_item {
+                    width: 100%;
+                    height: 184px;
+                    border: 1px dashed #7D7D7D;
+                    border-radius: 5px;
+                    margin-top: 38px;
+                    @include flex-column(center, center);
+
+                    label {
+                        @include text(20px, 'Normalidad-regular', $color-blue);
+                        margin-right: 5px;
+                    }
+
+                    input {
+                        display: none;
+                    }
+
+                    span {
+                        @include text(20px, 'Normalidad-light', $color-gray);
+                    }
+                    p {
+                        @include text(16px, 'Normalidad-light', $color-gray);
+                        margin-top: -5px;
+                    }
+                }
+                .check_agree_myFile {
+                    .check_agree_MyFile {
+                        @include text(16px, 'Normalidad-regular', $color-gray);
+                        line-height: 15px;
+                    }
+                }
+            }
+
+            .mobile_schedule {
+                label {
+                    width: 100%;
+                    @include flex(center, start);
+                    @include text(20px, 'Normalidad-light', $color-black);
+                    line-height: 25px;
+                    margin-top: 32px;
+                    input {
+                        margin-right: 17px;
+                    }
+                }
+
+                .other_radio {
+                    display: flex;
+                    align-items: center;
+                    margin-top: 32px;
+                    div {
+                        width: 100%;
+                        height: 20px;
+                        position: relative;
+                    }
+                    input[type="radio"] {
+                        margin-right: 17px;
+                    }
+                    .r_input {
+                        width: 100%;
+                        height: 100%;
+                        outline: none;
+                        border: none;
+                        border-bottom: 1px solid $color-gray-light;
+                        padding-bottom: 10px;
+                        @include text(20px, 'Normalidad-light', $color-black);
+                        transition: .3s;  
+    
+                        &:focus {
+                            border-bottom: 1px solid $color-blue;
+                        }
+                    }
+                    .r_input:focus,
+                    .r_input:valid {
+                    border-bottom: 1px solid $color-blue;
+                }
+                .r_input:focus ~ .r_label,
+                .r_input:valid ~ .r_label {
+                    transform: translateY(-20px);
+                    font-size: 14px;
+                    color: $color-blue;
+                }
+
+                .r_label {
+                    position: absolute;
+                    left: 0;
+                    bottom: 0;
+                    cursor: pointer;
+                    @include text(20px, 'Normalidad-light', $color-gray);
+                    transition: .3s; 
+                    pointer-events: none;
+                }   
+                }
+            }
+
+            .work_item {
+                position: relative;
+                width: 100%;
+                height: 100px;
+                margin-top: 60px;
+                .work_list {
+                    width: 100%;
+                    height: 100px;
+                    resize: none;
+                    border: none; 
+                    border-bottom: 1px solid $color-gray-light;
+                    @include text(20px, 'Normalidad-light', $color-black);
+                    transition: .3s;  
+                    outline: none;
+
+                    &:focus {
+                        border-bottom: 1px solid $color-blue;
+                    }
+                }
+                .work_list:focus ~ label,
+                .work_list:valid ~ label {
+                    transform: translateY(-30px);
+                    font-size: 14px;
+                    color: $color-blue;
+                }
+
+                label {
+                    position: absolute;
+                    left: 0;
+                    top: -30px;
+                    cursor: pointer;
+                    @include text(20px, 'Normalidad-light', $color-gray);
+                    transition: .3s; 
+                    pointer-events: none;
+                }
+            }
+            .work_schedule {
+              @include flex(center, space-between);
+              label {
+                 @include flex(center, center);
+                 cursor: pointer;
+              }
+            }
+        }
+    }
+}
+
+@import 'media'

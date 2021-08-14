@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <!-- Author: Jamshid Tojiboyev -->
+    <!-- Telegram: @FWD02 -->
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/styles/css/bootstrap5.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" href="assets/styles/css/main.css">
+    <title>Заполни анкету</title>
+</head>
+<body class="form_page">
+    <section class="form">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 to_the_project">
+                    <a href=""><img src="assets/images/png/back.png" alt="">К проекту</a>
+                </div>
+                <div class="col-12 title_text">
+                    <h1>Заполни анкету для участия <br>
+                        в  DIGITAL ЛЕКТОРИЙ</h1>
+                </div>
+            </div>
+            <form action="">
+                <div class="row">
+                    <div class="col-12 form_title_text">
+                        <h3>Расскажи о себе</h3>
+                    </div>
+
+                    <div class="col-lg-6 col-12">
+                        <div class="input_list">
+                            <input type="text" name="first-name" id="firstName" class="form_input" maxlength="40" required>
+                            <label for="firstName" class="form_label">Фамилия<span>*</span></label>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-12">
+                        <div class="input_list">
+                            <input type="text" name="last-name" id="lastName" class="form_input" maxlength="40" required>
+                            <label for="lastName" class="form_label">Имя<span>*</span></label>
+                        </div>
+                    </div> 
+                </div>
+                <!-- End row -->
+
+                <div class="row">
+                    <div class="col-lg-6 col-12">
+                        <div class="input_list">
+                            <input type="text" name="middle-name" id="middleName" class="form_input" maxlength="40" required>
+                            <label for="middleName" class="form_label">Отчество<span>*</span></label>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-12">
+                        <div class="input_list">
+                            <input type="text" name="date-birth" id="dateBirth" class="form_input" required>
+                            <label for="dateBirth" class="form_label">Дата рождения<span>*</span></label>
+                        </div>
+                    </div>
+                </div>
+                <!-- End row -->
+
+                
+                <div class="row">
+                    <div class="col-lg-6 col-12">
+                        <div class="input_list">
+                            <input type="text" name="user-email" id="userEmail" class="form_input" required>
+                            <label for="userEmail" class="form_label">E-mail<span>*</span></label>
+                        </div> 
+                    </div>
+                    <div class="col-lg-6 col-12">
+                        <div class="input_list">
+                            <input type="text" name="phone" id="phone" class="form_input" required>
+                            <label for="phone" class="form_label">Телефон<span>*</span></label>
+                        </div> 
+                    </div>
+                </div>
+                <!-- End row -->
+
+                <div class="row">
+                    <div class="col-12 form_title_text">
+                        <h3>Образование</h3>
+                    </div>
+
+                    <div class="col-lg-6 col-12">
+                        <div class="input_list">
+                            <input type="text" name="university" id="university" class="form_input" required>
+                            <label for="university" class="form_label">University<span>*</span></label>
+                        </div> 
+                    </div>
+                    <div class="col-lg-6 col-12">
+                        <div class="input_list">
+                            <input type="text" name="direction" id="direction" class="form_input" required>
+                            <label for="direction" class="form_label">Направление<span>*</span></label>
+                        </div> 
+                    </div>
+                </div>
+                <!-- End row -->
+
+                <div class="row lectures">
+                    <div class="col-12 form_title_text">
+                        <h3>На какие лекции хотите попасть?</h3>
+                    </div>
+
+                    <div class="col-12 radio_list">
+                        <label for="value_1" class="label_radio">
+                            <input type="radio" name="value-1" id="value_1" class="form_radio">
+                            Цифровая трансформация в банках и не только
+                        </label>
+                        <label for="value_2" class="label_radio">
+                            <input type="radio" name="value-1" id="value_2" class="form_radio">
+                            Бизнес-модели цифровой экономики: как современные компании зарабатывают деньги
+                        </label>
+                        <label for="value_3" class="label_radio">
+                            <input type="radio" name="value-1" id="value_3" class="form_radio">
+                            Изменения в орг модели банков – agile, design thinking, DevOps
+                        </label>
+                        <label for="value_4" class="label_radio">
+                            <input type="radio" name="value-1" id="value_4" class="form_radio">
+                            Тренды рынка онлайн рекламы
+                        </label>
+                        <label for="value_5" class="label_radio">
+                            <input type="radio" name="value-1" id="value_5" class="form_radio">
+                            ИТ Архитектура и цифровые продукты
+                        </label>
+                        <label for="value_6" class="label_radio">
+                            <input type="radio" name="value-1" id="value_6" class="form_radio">
+                            Управление информацией: почему менеджеры ошибаются
+                        </label>
+                        <label for="value_7" class="label_radio">
+                            <input type="radio" name="value-1" id="value_7" class="form_radio">
+                            Эффективные процессы в Банке: CJM, Process mining, RPA и другие инструменты оптимизации
+                        </label>
+                        <label for="value_8" class="label_radio">
+                            <input type="radio" name="value-1" id="value_8" class="form_radio">
+                            Четвертая промышленная революция: от сводных таблиц к искусственному интеллекту
+                        </label>
+                        <label for="value_9" class="label_radio">
+                            <input type="radio" name="value-1" id="value_9" class="form_radio">
+                            Омниканальность: один из основных трендов цифровизации
+                        </label>
+                        <label for="value_10" class="label_radio"> 
+                            <input type="radio" name="value-1" id="value_10" class="form_radio">
+                            CIO – career is over? Правила построения карьеры в большой организации
+                        </label>
+                        <label for="value_11" class="label_radio"> 
+                            <input type="radio" name="value-1" id="value_11" class="form_radio">
+                            CIO – career is over? Правила построения карьеры в большой организации
+                        </label>
+
+                        <label for="checkAgree" class="label_radio check_agree"> 
+                            <input type="radio" name="check-agree" id="checkAgree" class="form_radio">
+                            Даю согласие на обработку персональных данных
+                        </label>
+                    </div>
+                </div>
+                <!-- End row -->
+
+                <div class="row mobile_schedule">
+                    <div class="col-12 form_title_text">
+                        <h3>Текущий график работы/учебы</h3>
+                    </div>
+                    <div class="col-12">
+                        <label for="radio1">
+                            <input type="radio" name="radio" id="radio1">
+                            Учучь на дневном
+                        </label>
+                        <label for="radio2">
+                            <input type="radio" name="radio" id="radio2">
+                            Учучь на вечернем и работаю
+                        </label>
+                        <label for="radio3">
+                            <input type="radio" name="radio" id="radio3">
+                            Закончил обучение, только работаю
+                        </label>
+                        <div class="other_radio">
+                            <input type="radio" name="" id="">
+                            <div>
+                                <input type="text" name="other" id="" class="r_input" required>
+                            <label for="other" class="r_label">Другое</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 form_title_text">
+                        <h3>Где и кем ты сейчас работешь (если работаешь?)</h3>
+                    </div>
+
+                    <div class="col-12">
+                        <div class="work_item">
+                            <textarea name="" id="work" class="work_list" required></textarea>
+                            <label for="work">Введи текст*</label>
+                        </div>
+                    </div>
+
+                    <div class="col-12 form_title_text ">
+                        <h3>Есть ли у тебя возможность работать по графику 5/2?</h3>
+
+                        <div class="work_schedule">
+                            <label for="yes">
+                                <input type="radio" name="work" id="yes">
+                                Да
+                            </label>
+                            <label for="no">
+                                <input type="radio" name="work" id="no">
+                                Нет
+                            </label>
+                        </div>
+                    </div>
+                    
+                </div>
+                
+                <div class="row add_file">
+                    <div class="col-12 form_title_text">
+                        <h3>Резюме</h3>
+                    </div>
+                    <div class="col-12">
+                        <div class="add_file_item">
+                            <div class="">
+                                <label for="addFile">
+                                    <input type="file" name="user-file" id="addFile">
+                                    Выберите файл
+                                </label>
+                                <span>или перетащите в поле</span>
+                            </div>
+                            <p>DOC, PDF, PNG,  до 20Мбайт</p>
+                        </div>
+                    </div>
+                    <div class="col-12 check_agree_myFile">
+                        <label for="checkAgreeMyFile" class="label_radio check_agree_MyFile"> 
+                            <input type="radio" name="check-agree-myFile" id="checkAgreeMyFile" class="form_radio">
+                            Даю согласие на обработку персональных данных
+                        </label>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-12 btn_submit">
+                        <button type="button" id="btnSubmit">Отправить</button>
+                    </div>
+                </div>
+                <!-- End row -->
+            </form>
+        </div>
+    </section>
+</body>
+</html>
