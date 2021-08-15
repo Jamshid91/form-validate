@@ -1,7 +1,29 @@
-$color-gray-black: #8B8B8B;
-$color-blue: #1919EF;
-$color-black: #000000;
-$color-gray-light: #CACACA;
-$color-gray: #9B9B9B;
-$color-white: #ffffff;
-$bgc:  #E5E5E5;;
+:root {
+  --primary-background: #fff;
+  --secondary-background: #313131;
+  --light-gray-background: #E5E5E5;
+
+  --text-default: #000;
+  --text-primary: #1919EF;
+  --text-secondary: #000;
+  --text-third: #fff;
+  --text-gray: #9B9B9B;
+  --text-gray-black: #8B8B8B;
+  --text-gray-light: #CACACA;
+
+  --text-sidebar: #fff;
+  --text-button: #fff;
+
+  --text-success: #00CF6B;
+  --text-danger: #FC1C2B;
+  --text-warning: #FCEA1C;
+
+  --text-link-primary: #1C54FC;
+  --text-link-secondary: #fff;
+
+  --hover-primary: #4070FF;
+  --hover-secondary: #3e4555;
+  --hover-success: #4070FF;
+
+  --border-radius: 30px;
+}

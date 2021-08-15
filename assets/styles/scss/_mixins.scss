@@ -1,3 +1,5 @@
+@import 'fonts';
+
 @mixin flex($items, $content) {
     display: flex;
     align-items: $items;
@@ -11,10 +13,13 @@
     flex-direction: column;
 }
 
-@mixin text($size, $font, $color) {
+@mixin text($size, $weight, $color) {
+    font-family: 'Normalidad';
     font-size: $size;
-    font-family: $font;
+    font-weight: $weight;
     color: $color;
+    font-style: normal;
+    font-display: swap;
 }
 
 @mixin section($height) {

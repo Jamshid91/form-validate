@@ -6,100 +6,116 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/styles/css/bootstrap5.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
     <link rel="stylesheet" href="assets/styles/css/main.css">
     <title>Заполни анкету</title>
 </head>
-<body class="form_page">
-    <section class="form">
+<body>
+    <main class="fill_form">
         <div class="container">
-            <div class="row">
-                <div class="col-12 to_the_project">
-                    <a href=""><img src="assets/images/png/back.png" alt="">К проекту</a>
+                <div class="col-12">
+                    <a href="" class="btn_back">
+                        <img src="assets/images/svg/back.svg" alt="back.svg" class="btn_back_svg">
+                        К проекту
+                    </a>
                 </div>
-                <div class="col-12 title_text">
-                    <h1>Заполни анкету для участия <br>
-                        в  DIGITAL ЛЕКТОРИЙ</h1>
+                <div class="col-12">
+                    <h1 class="fill_form_title_text">Заполни анкету для участия
+                        в  <span class="fill_form_title_textDesctop">DIGITAL ЛЕКТОРИЙ</span>
+                        <span class="fill_form_title_textMobile">DEV SCHOOl</span>
+                    </h1>
                 </div>
-            </div>
-            <form action="">
-                <div class="row">
-                    <div class="col-12 form_title_text">
-                        <h3>Расскажи о себе</h3>
-                    </div>
 
-                    <div class="col-lg-6 col-12">
-                        <div class="input_list">
-                            <input type="text" name="first-name" id="firstName" class="form_input" maxlength="40" required>
-                            <label for="firstName" class="form_label">Фамилия<span>*</span></label>
-                        </div>
-                    </div>
-                    <div class="col-lg-6 col-12">
-                        <div class="input_list">
-                            <input type="text" name="last-name" id="lastName" class="form_input" maxlength="40" required>
-                            <label for="lastName" class="form_label">Имя<span>*</span></label>
-                        </div>
-                    </div> 
-                </div>
-                <!-- End row -->
-
-                <div class="row">
-                    <div class="col-lg-6 col-12">
-                        <div class="input_list">
-                            <input type="text" name="middle-name" id="middleName" class="form_input" maxlength="40" required>
-                            <label for="middleName" class="form_label">Отчество<span>*</span></label>
-                        </div>
-                    </div>
-                    <div class="col-lg-6 col-12">
-                        <div class="input_list">
-                            <input type="text" name="date-birth" id="dateBirth" class="form_input" required>
-                            <label for="dateBirth" class="form_label">Дата рождения<span>*</span></label>
-                        </div>
-                    </div>
-                </div>
-                <!-- End row -->
-
+                <!--form validate -->
+            <form action="" class="form_validate">
                 
-                <div class="row">
-                    <div class="col-lg-6 col-12">
-                        <div class="input_list">
-                            <input type="text" name="user-email" id="userEmail" class="form_input" required>
-                            <label for="userEmail" class="form_label">E-mail<span>*</span></label>
+                <!-- about_yourself -->
+                <div class="form_validate_about_yourself">
+                    <div class="col-12">
+                        <h3 class="form_validate_title_text">Расскажи о себе</h3>
+                    </div>
+
+                    <div class="flex-row">
+                        <div class="col-6">
+                            <div class="form_validate_input_text">
+                                <input type="text" name="first-name" id="firstName" class="input_text" maxlength="40" required>
+                                <label for="firstName" class="input_text_label">Фамилия<span class="star">*</span></label>
+                                <span class="formSetErrorFor"></span>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="form_validate_input_text">
+                                <input type="text" name="last-name" id="lastName" class="input_text" maxlength="40" required>
+                                <label for="lastName" class="input_text_label">Имя<span class="star">*</span></label>
+                                <span class="formSetErrorFor"></></span>
+                            </div>
                         </div> 
                     </div>
-                    <div class="col-lg-6 col-12">
-                        <div class="input_list">
-                            <input type="text" name="phone" id="phone" class="form_input" required>
-                            <label for="phone" class="form_label">Телефон<span>*</span></label>
-                        </div> 
+
+                <div class="flex-row">
+                    <div class="col-6">
+                        <div class="form_validate_input_text">
+                            <input type="text" name="middle-name" id="middleName" class="input_text" maxlength="40" required>
+                            <label for="middleName" class="input_text_label">Отчество<span class="star">*</span></label>
+                            <span class="formSetErrorFor"></></span>
+                        </div>
+                    </div>
+
+                    <div class="col-6">
+                        <div class="form_validate_input_text">
+                            <input type="text" name="date-birth" id="dateBirth" class="input_text" required>
+                            <label for="dateBirth" class="input_text_label">Дата рождения<span class="star">*</span></label>
+                            <span class="formSetErrorFor"></></span>
+                        </div>
                     </div>
                 </div>
-                <!-- End row -->
-
-                <div class="row">
-                    <div class="col-12 form_title_text">
-                        <h3>Образование</h3>
-                    </div>
-
-                    <div class="col-lg-6 col-12">
-                        <div class="input_list">
-                            <input type="text" name="university" id="university" class="form_input" required>
-                            <label for="university" class="form_label">University<span>*</span></label>
-                        </div> 
-                    </div>
-                    <div class="col-lg-6 col-12">
-                        <div class="input_list">
-                            <input type="text" name="direction" id="direction" class="form_input" required>
-                            <label for="direction" class="form_label">Направление<span>*</span></label>
-                        </div> 
+               
+                    <div class="flex-row">
+                        <div class="col-6">
+                            <div class="form_validate_input_text">
+                                <input type="text" name="user-email" id="userEmail" class="input_text" required>
+                                <label for="userEmail" class="input_text_label">E-mail<span class="star">*</span></label>
+                                <span class="formSetErrorFor"></></span>
+                            </div> 
+                        </div>
+                        <div class="col-6">
+                            <div class="form_validate_input_text">
+                                <input type="text" name="phone" id="phone" class="input_text" required>
+                                <label for="phone" class="input_text_label">Телефон<span class="star">*</span></label>
+                                <span class="formSetErrorFor"></></span>
+                            </div> 
+                        </div>
                     </div>
                 </div>
-                <!-- End row -->
 
-                <div class="row lectures">
-                    <div class="col-12 form_title_text">
-                        <h3>На какие лекции хотите попасть?</h3>
+                <!-- Education -->
+                <div class="form_validate_education">
+                    <div class="col-12">
+                        <h3 class="form_validate_title_text">Образование</h3>
+                    </div>
+
+                    <div class="flex-row">
+                        <div class="col-6">
+                            <div class="form_validate_input_text">
+                                <input type="text" name="university" id="university" class="input_text" required>
+                                <label for="university" class="input_text_label">University<span class="star">*</span></label>
+                                <span class="formSetErrorFor"></></span>
+                            </div> 
+                        </div>
+                        <div class="col-6">
+                            <div class="form_validate_input_text">
+                                <input type="text" name="direction" id="direction" class="input_text" required>
+                                <label for="direction" class="input_text_label">Направление<span class="star">*</span></label>
+                                <span class="formSetErrorFor"></></span>
+                            </div> 
+                        </div>
+                    </div>
+                </div>
+
+                <!--desctop radio inputs -->
+                <div class="form_validate_desctop_radioTnputs">
+                    <div class="col-12">
+                        <h3 class="form_validate_title_text">На какие лекции хотите попасть?</h3>
                     </div>
 
                     <div class="col-12 radio_list">
@@ -154,13 +170,14 @@
                         </label>
                     </div>
                 </div>
-                <!-- End row -->
 
-                <div class="row mobile_schedule">
-                    <div class="col-12 form_title_text">
-                        <h3>Текущий график работы/учебы</h3>
-                    </div>
+                <!-- mobile radio inputs -->
+                <div class="form_validate_mobile_radioTnputs">
                     <div class="col-12">
+                        <h3 class="form_validate_title_text">Текущий график работы/учебы</h3>
+                    </div>
+
+                    <div class="col-12 mobile_radioTnputs_list">
                         <label for="radio1">
                             <input type="radio" name="radio" id="radio1">
                             Учучь на дневном
@@ -182,8 +199,8 @@
                         </div>
                     </div>
 
-                    <div class="col-12 form_title_text">
-                        <h3>Где и кем ты сейчас работешь (если работаешь?)</h3>
+                    <div class="col-12">
+                        <h3 class="form_validate_title_text">Где и кем ты сейчас работешь (если работаешь?)</h3>
                     </div>
 
                     <div class="col-12">
@@ -193,8 +210,8 @@
                         </div>
                     </div>
 
-                    <div class="col-12 form_title_text ">
-                        <h3>Есть ли у тебя возможность работать по графику 5/2?</h3>
+                    <div class="col-12 ">
+                            <h3 class="form_validate_title_text">Есть ли у тебя возможность работать по графику 5/2?</h3>
 
                         <div class="work_schedule">
                             <label for="yes">
@@ -207,23 +224,72 @@
                             </label>
                         </div>
                     </div>
+                    <!-- End col-list -->
+
+                    <div class="col-12 ">
+                            <h3 class="form_validate_title_text">Текущий уровень технической компетеции</h3>
+                       
+                        <div class="current_level">
+                            <label for="junior">
+                                <input type="radio" name="lavel" id="junior">
+                                Я совсем новичек
+                            </label>
+                            <label for="middle">
+                                <input type="radio" name="lavel" id="middle">
+                                Начинающий специалист
+                            </label>
+                            <label for="senior">
+                                <input type="radio" name="lavel" id="senior">
+                                Профи
+                            </label>
+                        </div>
+                    </div>
+                    <!-- End col-list -->
+
+                    <div class="col-12">
+                            <h3 class="form_validate_title_text">Какие скиллы , знания у тебя уже есть, перечисли все, что ты уже умеешь 
+                                и знаешь + обучение,  которые проходил (а)</h3>
+                        <div class="work_item">
+                            <textarea name="" id="work" class="work_list" required></textarea>
+                            <label for="work">Введи текст*</label>
+                        </div>
+                    </div>
+                    <!-- End col-list -->
+
+                    <div class="col-12">
+                            <h3 class="form_validate_title_text">В каком направлении 
+                                IT планируешь развиваться?</h3>
+                        <div class="work_item">
+                            <textarea name="" id="work" class="work_list" required></textarea>
+                            <label for="work">Введи текст*</label>
+                        </div>
+                    </div>
+                    <!-- End col-list -->
                     
+                    <div class="col-12">
+                            <h3 class="form_validate_title_text">Почему ты заинтересовался программой</h3>
+                        <div class="work_item">
+                            <textarea name="" id="work" class="work_list" required></textarea>
+                            <label for="work">Введи текст*</label>
+                        </div>
+                    </div>
+                    <!-- End col-list -->
                 </div>
                 
-                <div class="row add_file">
-                    <div class="col-12 form_title_text">
-                        <h3>Резюме</h3>
-                    </div>
+                <!-- add file -->
+                <div class="form_validate_add_file">
+                        <h3 class="form_validate_title_text">Резюме</h3>
+
                     <div class="col-12">
                         <div class="add_file_item">
-                            <div class="">
-                                <label for="addFile">
-                                    <input type="file" name="user-file" id="addFile">
+                            <div class="add_file_item_text">
+                                <label for="addFile" class="file_label">
+                                    <input type="file" name="user-file" class="file_input" id="addFile">
                                     Выберите файл
                                 </label>
-                                <span>или перетащите в поле</span>
+                                <span class="file_label_text">или перетащите в поле</span>
                             </div>
-                            <p>DOC, PDF, PNG,  до 20Мбайт</p>
+                            <p class="file_info">DOC, PDF, PNG,  до 20Мбайт</p>
                         </div>
                     </div>
                     <div class="col-12 check_agree_myFile">
@@ -234,14 +300,15 @@
                     </div>
                 </div>
 
-                <div class="row">
-                    <div class="col-12 btn_submit">
-                        <button type="button" id="btnSubmit">Отправить</button>
-                    </div>
+                <div class="col-12 btn_submit">
+                    <button type="button" id="btnSubmit">Отправить</button>
                 </div>
-                <!-- End row -->
             </form>
         </div>
-    </section>
+    </main>
+
+    <script src="assets/js/jquery.js"></script>
+    <script src="assets/js/jquery.maskedinput.js"></script>
+    <script src="assets/js/form.js"></script>
 </body>
 </html>

@@ -1,34 +1,57 @@
 @font-face{
-    font-family: 'Normalidad-thin';
+    font-family: 'Normalidad';
     src: url(../../fonts/font/NormalidadCompact-Thin.ttf);
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
 }
 
 @font-face{
-    font-family: 'Normalidad-thin_1';
+    font-family: 'Normalidad';
     src: url(../../fonts/font/NormalidadCompact-Thin_1.ttf);
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
 }
 
 @font-face{
-    font-family: 'Normalidad-regular';
-    src: url(../../fonts/font/NormalidadCompact-Regular.ttf);
-}
-
-@font-face{
-    font-family: 'Normalidad-medium';
-    src: url(../../fonts/font/NormalidadCompact-Medium.ttf);
-}
-
-@font-face{
-    font-family: 'Normalidad-light';
+    font-family: 'Normalidad';
     src: url(../../fonts/font/NormalidadCompact-Light.ttf);
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
 }
 
 @font-face{
-    font-family: 'Normalidad-bold';
+    font-family: 'Normalidad';
+    src: url(../../fonts/font/NormalidadCompact-Regular.ttf);
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face{
+    font-family: 'Normalidad';
+    src: url(../../fonts/font/NormalidadCompact-Medium.ttf);
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+
+}
+
+
+@font-face{
+    font-family: 'Normalidad';
     src: url(../../fonts/font/NormalidadCompact-Bold.ttf);
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
 }
 
 @font-face{
-    font-family: 'Normalidad-black';
+    font-family: 'Normalidad';
     src: url(../../fonts/font/NormalidadCompact-Black.ttf);
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
 }

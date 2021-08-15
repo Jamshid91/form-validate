@@ -1,36 +1,56 @@
 @import 'fonts';
 @import 'colors';
 @import 'mixins';
+@import 'layout';
 
 // Desctop screen
 @media screen and (min-width: 993px) {
-    .form_page {
-        form {
-            .add_file {
+    .fill_form_title_textMobile {
+        display: none;
+    }
+        .form_validate {
+            &_add_file {
                 display: none;
             }
 
-            .mobile_schedule {
+            &_mobile_radioTnputs {
                 display: none !important;
             }
         }
-    }
 }
 
 // Tablet screen
 @media screen and (max-width: 992px) {
-    .form_page {
-        form {
+        .fill_form {
+            padding: 99px 0 !important;
+
+            .col-6 {
+                flex: 0 0 100%;
+                max-width: 100%;
+            }
+
+            &_title_text {
+                font-size: 40px !important;
+            }
+
+            .fill_form_title_textMobile {
+                display: none;
+            }
+
+        .form_validate {
+            &_title_text {
+                margin-top: 65px !important;
+            }
             .btn_submit {
                 text-align: start !important;
                 margin-top: 82px !important;
             }
 
-            .add_file {
-                display: flex;
+            &_add_file {
+                display: block;
             }
 
-            .mobile_schedule {
+            &_mobile_radioTnputs {
                 display: none !important;
             }
         }
@@ -39,31 +59,47 @@
 
 // Mobile screen
 @media screen and (max-width: 576px) {
-    .form_page {
-        .form {
-            padding: 99px 0 !important;
+    .fill_form {
+        padding: 99px 0 !important;
+
+        &_title_text {
+            font-size: 28px !important;
+            line-height: 35px !important;
         }
-        .title_text {
-            h1 {
-                font-size: 28px !important;
-                line-height: 35px !important; 
-            }
+        .fill_form_title_textDesctop {
+            display: none;
         }
-        form { 
-            .form_title_text {
+        .fill_form_title_textMobile {
+            display: block;
+        }
+    .form_validate {
+        &_title_text {
             margin-top: 47px !important;
-            // h3 {
-            //     font-family: 'Normalidad-light' !important;
-            // }
+        }
+        .btn_submit {
+            text-align: center !important;
+            margin-top: 66px !important;
         }
 
-            .lectures {
-                display: none !important;
-            }
+        &_mobile_radioTnputs {
+            display: block !important;
+        }
 
-            .mobile_schedule {
-                display: flex !important;
+        &_desctop_radioTnputs {
+            display: none !important;
+        }
+        &_add_file {
+            .add_file_item_text {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-wrap: wrap;
+                line-height: 20px;
+            }
+            .file_info {
+                margin-top: 5px !important;
             }
         }
     }
+}
 }
